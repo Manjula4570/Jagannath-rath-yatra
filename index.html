@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>रथ यात्रा शुभकामनाएं</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+        #rathYatraImage {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #ff9933; /* Saffron border */
+        }
+        h1 {
+            color: #d9534f; /* Saffron-ish red */
+        }
+        p {
+            font-size: 1.1em;
+            color: #333;
+        }
+        strong {
+            color: #5cb85c; /* Green for sender's name */
+        }
+        button {
+            background-color: #ff9933; /* Saffron */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e68a00; /* Darker Saffron */
+        }
+        #generatedLinkContainer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+        }
+        #shareableLink {
+            width: calc(100% - 22px); /* Adjust for padding and border */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        #copyButton {
+            background-color: #5cb85c; /* Green */
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+        #copyButton:hover {
+            background-color: #4cae4c; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- अपनी रथ यात्रा इमेज को Base64 में कन्वर्ट करके यहाँ डालें -->
+        <!-- या फिर अगर इमेज GitHub पर ही है, तो उसका रिलेटिव पाथ दें -->
+        <img id="rathYatraImage" src="data:image/jpeg;base64,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" alt="जगन्नाथ रथ यात्रा">
+        
+        <!-- संदेश और भेजने वाले का नाम यहाँ दिखेगा -->
+        <h1 id="greetingMessage">जय जगन्नाथ! शुभ रथ यात्रा!</h1>
+        <p id="senderInfo"></p>
+        
+        <!-- शेयर बटन -->
+        <button id="shareButton">आगे भेजें</button>
+        
+        <!-- जेनरेटेड लिंक दिखाने के लिए -->
+        <div id="generatedLinkContainer" style="display:none;">
+            <p>यह लिंक कॉपी करके शेयर करें:</p>
+            <input type="text" id="shareableLink" readonly>
+            <button id="copyButton">लिंक कॉपी करें</button>
+        </div>
+    </div>
+
+    <script>
+        // जब पेज लोड हो
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const senderName = urlParams.get('sender');
+            const senderInfoElement = document.getElementById('senderInfo');
+            const greetingMessageElement = document.getElementById('greetingMessage');
+
+            if (senderName) {
+                // अगर URL में भेजने वाले का नाम है
+                greetingMessageElement.textContent = "जय जगन्नाथ! शुभ रथ यात्रा!";
+                senderInfoElement.innerHTML = `आपके लिए यह शुभकामना भेजी है: <strong>${decodeURIComponent(senderName)}</strong> ने।`;
+            } else {
+                // अगर कोई भेजने वाला नहीं (पहली बार खोला गया)
+                greetingMessageElement.textContent = "जय जगन्नाथ! शुभ रथ यात्रा!";
+                senderInfoElement.textContent = "यह शुभकामना आप भी आगे भेज सकते हैं।";
+            }
+        };
+
+        // शेयर बटन पर क्लिक करने पर
+        document.getElementById('shareButton').addEventListener('click', function() {
+            const yourName = prompt("आपका नाम दर्ज करें (भेजने वाले का नाम):");
+            
+            if (yourName && yourName.trim() !== "") {
+                const currentUrl = window.location.href.split('?')[0]; // मौजूदा URL बिना किसी पैरामीटर के
+                const shareableLink = `${currentUrl}?sender=${encodeURIComponent(yourName.trim())}`;
+                
+                document.getElementById('shareableLink').value = shareableLink;
+                document.getElementById('generatedLinkContainer').style.display = 'block';
+                
+                // ऑटो स्क्रॉल करके लिंक दिखाएं
+                document.getElementById('generatedLinkContainer').scrollIntoView({ behavior: 'smooth' });
+
+            } else if (yourName !== null) { // अगर OK दबाया पर नाम खाली छोड़ा
+                alert("कृपया अपना नाम दर्ज करें।");
+            }
+            // अगर Cancel दबाया तो कुछ नहीं होगा
+        });
+
+        // कॉपी बटन पर क्लिक करने पर
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const linkInput = document.getElementById('shareableLink');
+            linkInput.select(); // टेक्स्ट को सेलेक्ट करें
+            linkInput.setSelectionRange(0, 99999); // मोबाइल डिवाइस के लिए
+
+            try {
+                const successful = document.execCommand('copy'); // कॉपी करने की कोशिश
+                if (successful) {
+                    alert('लिंक क्लिपबोर्ड पर कॉपी हो गया है!');
+                } else {
+                    alert('लिंक कॉपी करने में विफल। कृपया इसे मैन्युअल रूप से कॉपी करें।');
+                }
+            } catch (err) {
+                alert('लिंक कॉपी करने में विफल। कृपया इसे मैन्युअल रूप से कॉपी करें।');
+            }
+        });
+
+        // इमेज को Base64 में बदलने का तरीका:
+        // 1. गूगल पर "image to base64 converter" सर्च करें।
+        // 2. किसी भी ऑनलाइन कनवर्टर साइट पर जाएं (जैसे base64-image.de)।
+        // 3. अपनी रथ यात्रा की इमेज अपलोड करें।
+        // 4. "Show code" या "Copy image" जैसा ऑप्शन चुनें।
+        // 5. जो `data:image/jpeg;base64,` से शुरू होने वाला कोड मिले, उसे कॉपी करें।
+        // 6. ऊपर HTML कोड में `src="data:image/jpeg;base64,/9j/..."` की जगह अपनी इमेज का Base64 कोड पेस्ट करें।
+        // मैंने अभी के लिए एक सैंपल Base64 इमेज डाली है, आपको अपनी इमेज डालनी होगी।
+        // या, अगर आप इमेज को GitHub पर ही फ़ाइल के साथ अपलोड करते हैं, तो आप src में उस इमेज का नाम दे सकते हैं, जैसे: src="rath_yatra_image.jpg" (अगर इमेज का नाम rath_yatra_image.jpg है और HTML फाइल के साथ ही रखी है)।
+        // लेकिन आपने सिंगल फाइल कहा है, इसलिए Base64 बेहतर है।
+    </script>
+</body>
+</html>
